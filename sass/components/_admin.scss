@@ -1,0 +1,22 @@
+.page-user {
+	input#edit-submit-google {
+		background-color: transparent;
+		padding: 0;
+		margin-left: $horz-spacing-unit;
+	}
+	[type="submit"] {
+		float: left;
+		margin-bottom: $vert-spacing-unit;
+	}
+}
+html body.admin-menu {
+	margin-top: 70px !important;
+}
+#admin-menu {
+	z-index: 2000;
+}
+.logged-in {
+	.middle-wrapper .left-sidebar-wrapper, .middle-wrapper .right-sidebar-wrapper {
+	margin-top: 300px;
+}
+}

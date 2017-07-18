@@ -1,0 +1,80 @@
+.left-sidebar-wrapper {
+	ul.menu {
+		display: none;
+		visibility: hidden;
+	}
+}
+@include breakpoint(tablet) {
+	.left-sidebar-wrapper {
+		ul.menu {
+			padding: 0;
+			list-style: none;	
+			background-color: $light-grey;
+			display: list-item;
+			visibility: visible;
+			&> li {
+				list-style: none;
+				a {
+					padding: $vert-spacing-unit/2 $horz-spacing-unit;
+					display: block;
+					position: relative;
+					color: $black;
+					border-bottom: 1px solid lighten($grey, 30%);
+					text-decoration: none;
+					&.active {
+						font-weight: $bold-font-weight;
+					}
+					&:hover, &:focus {
+						background-color: $dark-base;
+						color: $white;
+					}
+				}
+				&.expanded {
+							&> a {
+								padding-right: $horz-spacing-unit *2;
+								&:after {
+									content: '\025BE';
+									position: absolute;
+									right: $horz-spacing-unit;
+									top: 5px;
+									font-size: $base-font-size * 1.2;
+								}
+							}
+							&.active-trail {
+								font-weight: $bold-font-weight;
+							}
+						}
+						&.collapsed {
+							&> a {
+								padding-right: $horz-spacing-unit *2;
+								&:after {
+									content: '\025B8';
+									position: absolute;
+									right: $horz-spacing-unit;
+									top: 5px;
+									font-size: $base-font-size * 1.2;
+								}
+							}
+						}
+				&.last {
+					a {
+						border-bottom: none;
+					}
+				}
+				&> ul {
+					background-color: darken($light-grey, 20%);
+					&> li {
+						a {
+						border-bottom: 1px solid lighten($grey, 10%);
+						font-weight: $base-font-weight;
+						}
+						ul {
+							background-color: darken($light-grey, 40%);
+						}
+					}
+					
+				}
+			}
+		}
+	}
+}

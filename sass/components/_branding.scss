@@ -1,0 +1,25 @@
+.l-branding {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: relative;
+	.site-logo {
+			img {
+				height: auto;
+				width: 80px;
+				padding: $small-spacing/2;
+				display: inline-block;
+				vertical-align: top;
+			}
+	}
+}
+@include breakpoint(tablet) {
+	.l-branding {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	.site-logo {
+			img {
+				width: 120px;
+			}
+		}
+	}
+}

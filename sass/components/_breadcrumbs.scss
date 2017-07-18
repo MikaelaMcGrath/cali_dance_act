@@ -1,0 +1,24 @@
+ul.breadcrumb {
+	display: flex;
+	margin-bottom: $vert-spacing-unit;
+	flex-wrap: wrap;
+	list-style: none;
+    padding-left: 0;
+    padding-bottom: 0;
+	a {
+		text-decoration: underline;
+		color: $black;
+	}
+	li {
+		&:after {
+			content: '\0003E';
+			padding: 0 $small-spacing / 2;
+		}
+		&:last-child {
+			&:after {
+				content: '';
+			}
+		}
+	}
+	
+}

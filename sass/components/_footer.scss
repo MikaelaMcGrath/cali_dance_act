@@ -1,0 +1,93 @@
+.l-footer {
+	background-color: $light-grey;
+	padding: $all-round;
+	.footer-main-menu {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+			li {
+				list-style-image: none;
+				list-style-type: none;
+				padding: 0 $horz-spacing-unit;
+				a, a:active, a:visited {
+					color: $grey;
+					text-decoration: none;
+					&:hover, &:focus {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+.social {
+	display: flex;
+	width: 100%;
+	padding: $all-round;
+	p {
+		height: 100%;
+		margin-bottom: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		padding-right: $horz-spacing-unit;
+		margin: 5px 0;
+		
+	}
+	.account-list {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		div {
+			flex: 0 0 auto;
+			margin: 0 5px;
+			height: 30px;
+			width: 30px;
+			a {
+				display: block;
+				height: 100%;
+				text-indent: 200%;
+				width: 100%;
+				overflow: hidden;
+			}
+
+			$social-media: facebook, youtube;
+
+			@each $account in $social-media {
+				&.#{$account} a {
+					background: url('../images/social/icn-#{$account}.svg'), $black;
+					background-repeat: no-repeat;
+					border-radius: 3px;
+					background-position: center;
+					background-size: auto 15px;
+					transition: all $base-duration ease-in-out;
+					&:hover, &:focus{
+						background-size: auto 20px;
+					}
+				}
+			}
+		}
+	}
+}
+@include breakpoint(tablet) {
+	.l-footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		.footer-main-menu {
+			ul {
+				justify-content: flex-start;
+
+			}
+		}
+		.social {
+			padding: 0;
+			width: auto;
+		}
+	}
+}

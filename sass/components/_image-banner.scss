@@ -1,0 +1,32 @@
+$content-section: about, find-club, competitions, coaches, rep-team, resources;
+
+			@each $section in $content-section {
+				&.section-#{$section} {
+					.center-wrapper {
+						position: absolute;
+						top: 0;
+						left: 0;
+					background: url('../images/header/#{$section}.jpg'), $black;
+					background-size: cover;
+					background-position: top;
+					background-repeat: no-repeat; 
+					width: 100%;
+			height: 200px;
+			z-index: -10;
+				}
+			}
+		}
+
+		@include breakpoint(tablet) {
+			$content-section: about, find-club, competitions, coaches, rep-team, resources;
+
+			@each $section in $content-section {
+				&.section-#{$section} {
+					.center-wrapper {
+				
+			height: 300px;
+
+				}
+			}
+		}
+		}

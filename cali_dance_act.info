@@ -1,0 +1,29 @@
+name = Cali-dance ACT
+description = Please provide a description for your theme.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/cali-dance-act.reset.css
+stylesheets[all][] = css/cali-dance-act.styles.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/cali-dance-act.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[header] = Header
+regions[content] = Content
+regions[footer] = Footer
+
+; ========================================
+; Plugins
+; ========================================
+plugins[panels][layouts] = panels/layouts

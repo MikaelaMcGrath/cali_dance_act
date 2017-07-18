@@ -1,0 +1,163 @@
+.main-menu {
+	flex: 1 0 auto;
+	//margin: 0 $horz-spacing-unit*4;
+	ul.menu {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		li {
+			list-style-image: none;
+			list-style-type: none;
+			a {
+				color: white;
+				text-decoration: none;
+				&:hover, &:focus {
+					color: $accent;
+				}
+			}
+			ul {
+				display: none;
+				visibility: hidden;
+			}
+			&.menu-mlid-901 {
+				display: none;
+				visibility: hidden;
+			}
+		}
+	}
+}
+.stickynav-active.main-menu{
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	margin: 0;
+	//position: fixed;
+	left: 0;
+	ul.menu {
+		max-width: 900px;
+		margin: auto;
+		padding-left: 140px;
+		padding-right: 70px;
+		li {
+			padding: $vert-spacing-unit*1.5 0;
+		}
+	}
+}
+.mean-container {
+	.mean-bar {
+		position: absolute;
+		width: 40px;
+		height: auto;
+		top: 0;
+		right: 0;
+		padding: 0;
+		background: transparent;
+		height: auto;
+		a {
+			padding: $vert-spacing-unit $horz-spacing-unit $vert-spacing-unit 0;
+		}
+		.mean-nav {
+			position: fixed;
+			top:8px;
+			left: 0;
+			ul li {
+			a {
+				border-top: 1px solid $grey;
+				padding: $vert-spacing-unit/2 2.5%;
+				width: 95%;
+				background: $black;
+				font-weight: $light-font-weight;
+				&:hover, &:focus {
+					background: $dark-base;
+				}
+				&.mean-expand, &.mean-clicked {
+					background-size: auto 10px;
+					overflow: hidden;
+					text-indent: 200%;
+					width: 16px;
+					height: 16px;
+				}
+				&.mean-expand {
+					background: transparent;
+					border: 0 !important;
+					&:after {
+						content: '\025B8';
+						color: $white;
+						font-size: $base-font-size * 1.2;
+						position: absolute;
+						top: 3px;
+						left: 0;
+						margin-left: -20px;
+					}
+					&:hover, &:focus {
+						background-color: $base;
+					}
+				}
+				&.mean-clicked {
+					background: transparent;
+					&:after {
+						content: '\025BE';
+						color: $white;
+						font-size: $base-font-size * 1.2;
+						position: absolute;
+						top: 3px;
+						left: 0;
+						margin-left: -20px;
+					}
+					&:hover {
+						background-color: $base;
+					}
+				}
+
+			}
+			ul {
+				display: block;
+				visibility: visible;
+			}
+			li {
+				a {
+					background: $dark-grey;
+					padding: $vert-spacing-unit/2 5%;
+					width: 90%;
+					opacity: 1;
+					border-top: 1px solid $grey;
+				}
+				li {
+					a {
+						background: lighten($dark-grey, 10%);
+						padding: $vert-spacing-unit/2 7.5%;
+						width: 85%;
+						border-top: 1px solid lighten($grey, 5%);
+					}
+				}
+			}
+		}
+		}
+	}
+}
+@include breakpoint(tablet) {
+	.main-menu {
+		margin: 0 $horz-spacing-unit;
+	}
+	
+}
+@include breakpoint(desktop) {
+	.main-menu {
+		margin: 0 $horz-spacing-unit*4;
+	}
+	.stickynav-active.main-menu{
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	margin: 0;
+	ul.menu {
+		max-width: 960px;
+		margin: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+		li {
+			padding: $vert-spacing-unit*1.5 0;
+		}
+	}
+}
+}
