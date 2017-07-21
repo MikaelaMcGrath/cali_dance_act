@@ -1052,11 +1052,11 @@ ul.breadcrumb {
   z-index: -10; }
 
 /* line 5, Users/Mikaela/Sites/devdesktop/CaliDance ACT/sites/all/themes/custom/cali_dance_act/sass/components/_image-banner.scss */
-.section-rep-team .center-wrapper {
+.section-rep-teams .center-wrapper {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/header/rep-team.jpg"), #000000;
+  background: url("../images/header/rep-teams.jpg"), #000000;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -1091,7 +1091,7 @@ ul.breadcrumb {
   .section-coaches .center-wrapper {
     height: 300px; }
   /* line 25, Users/Mikaela/Sites/devdesktop/CaliDance ACT/sites/all/themes/custom/cali_dance_act/sass/components/_image-banner.scss */
-  .section-rep-team .center-wrapper {
+  .section-rep-teams .center-wrapper {
     height: 300px; }
   /* line 25, Users/Mikaela/Sites/devdesktop/CaliDance ACT/sites/all/themes/custom/cali_dance_act/sass/components/_image-banner.scss */
   .section-resources .center-wrapper {

@@ -1,4 +1,4 @@
-$content-section: about, find-club, competitions, coaches, rep-team, resources;
+$content-section: about, find-club, competitions, coaches, rep-teams, resources;
 
 			@each $section in $content-section {
 				&.section-#{$section} {
@@ -18,7 +18,7 @@ $content-section: about, find-club, competitions, coaches, rep-team, resources;
 		}
 
 		@include breakpoint(tablet) {
-			$content-section: about, find-club, competitions, coaches, rep-team, resources;
+			$content-section: about, find-club, competitions, coaches, rep-teams, resources;
 
 			@each $section in $content-section {
 				&.section-#{$section} {
