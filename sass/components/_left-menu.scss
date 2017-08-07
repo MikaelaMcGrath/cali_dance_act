@@ -61,6 +61,16 @@
 						border-bottom: none;
 					}
 				}
+				&.menu-mlid-940, &.menu-mlid-925 {
+					&>a:after {
+						display: none;
+						visibility: hidden;
+					}
+					ul {
+						display: none;
+						visibility: hidden;
+					}
+				}
 				&> ul {
 					background-color: darken($light-grey, 20%);
 					&> li {
