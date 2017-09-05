@@ -112,7 +112,7 @@
       <?php if ($title): ?>
         <?php if ($is_front): ?>
           <div class="title-wrapper">
-            <h1><?php print $title; ?></h1>
+            <h1>Cali Dance ACT</h1>
           </div>
         <?php endif; ?>
       <?php endif; ?>
