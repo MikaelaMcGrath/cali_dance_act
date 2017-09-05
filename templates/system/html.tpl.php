@@ -76,6 +76,7 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="<?php print base_path() . path_to_theme() . '/images/favicon/ms-icon-144x144.png' ?>">
 <meta name="theme-color" content="#ffffff">
+
 </head>
 <body<?php print $attributes;?>>
   <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>

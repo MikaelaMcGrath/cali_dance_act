@@ -342,7 +342,7 @@
 		},
 	"\/images\/header\/about.jpg": {
 		"ft": 16384,
-		"iS": 570855,
+		"iS": 4050044,
 		"oA": 0,
 		"oAP": "\/images\/header\/about.jpg",
 		"oF": 0,
@@ -352,7 +352,7 @@
 		},
 	"\/images\/header\/coaches.jpg": {
 		"ft": 16384,
-		"iS": 542760,
+		"iS": 383409,
 		"oA": 0,
 		"oAP": "\/images\/header\/coaches.jpg",
 		"oF": 0,
@@ -362,12 +362,12 @@
 		},
 	"\/images\/header\/competitions.jpg": {
 		"ft": 16384,
-		"iS": 450611,
+		"iS": 708235,
 		"oA": 0,
 		"oAP": "\/images\/header\/competitions.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/header\/find-club.jpg": {
@@ -402,12 +402,12 @@
 		},
 	"\/images\/header\/home-3.jpg": {
 		"ft": 16384,
-		"iS": 584921,
+		"iS": 234497,
 		"oA": 0,
 		"oAP": "\/images\/header\/home-3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/header\/home-4.jpg": {
@@ -422,12 +422,12 @@
 		},
 	"\/images\/header\/home-5.jpg": {
 		"ft": 16384,
-		"iS": 934374,
+		"iS": 222652,
 		"oA": 0,
 		"oAP": "\/images\/header\/home-5.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/header\/home-6.jpg": {
@@ -442,7 +442,7 @@
 		},
 	"\/images\/header\/rep-team.jpg": {
 		"ft": 16384,
-		"iS": 310659,
+		"iS": 1053776,
 		"oA": 0,
 		"oAP": "\/images\/header\/rep-team.jpg",
 		"oF": 0,
@@ -452,12 +452,12 @@
 		},
 	"\/images\/header\/rep-teams.jpg": {
 		"ft": 16384,
-		"iS": 520615,
+		"iS": 1053776,
 		"oA": 0,
 		"oAP": "\/images\/header\/rep-teams.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/header\/resources.jpg": {
