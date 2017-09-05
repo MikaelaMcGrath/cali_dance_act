@@ -138,7 +138,7 @@
         <div class="account-list">
           <div class="facebook"><a href="https://www.facebook.com/CalisthenicsAct">Like us on Facebook</a></div>
 
-          <div class="youtube"><a href="https://www.youtube.com/channel/UCC1pM9R-ex8Dft7NV4z4Xcg">Subscribe to us on YouTube</a></div>
+          <div class="youtube"><a href="https://www.youtube.com/channel/UCVQj8hBAje0P84Dznu-tdnQ">Subscribe to us on YouTube</a></div>
         </div>
 
       </div>
